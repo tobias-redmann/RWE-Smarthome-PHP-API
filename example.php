@@ -15,3 +15,12 @@ $home->logon(USERNAME, PASSWORD);
 
 
 $rooms = $home->getRooms();
+
+
+foreach ($rooms as $room) {
+
+    echo 'GUID: '. $room->getId();
+    echo 'Name: '. $room->getName();
+    echo 'Type: '. $room->getType();
+
+}
